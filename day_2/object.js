@@ -11,7 +11,7 @@ const student  ={
     //     console.log(`Hello ${this.name}`) //used this
     // } //method
     greet : ()=>{
-        console.log(`Hello ${student.name}`) //used this
+        console.log(`Hello ${student.name}`) //if we used this then the o/p will be undefined
     }
 }
 student.greet()
