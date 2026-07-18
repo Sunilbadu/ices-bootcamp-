@@ -5,7 +5,7 @@
  console.log(1 === "1")//false
 
 
- function summation(num1 , num2 ){
+ function summation(num1 , num2 ){  
 
     return num1 + num2
  }
