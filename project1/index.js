@@ -61,4 +61,38 @@ const priceLimitItem=()=>{ //to filter by price limitation
 
 }
 
+while(true){
+    console.log("Methods menu")
+    console.log("1. Add Product ")
+    console.log("2. Remove Products ")
+    console.log("3. Filter Products ")
+    console.log("4. Search Products ")
+    console.log("5. View Products")
 
+    const ch = read.question("Enter Your Choice: ")
+    switch (ch) {
+        case 1:
+            addItem();
+        break;
+
+        case 2:
+            removeItem();
+        break;
+
+        case 3:
+            priceLimitItem();
+        break;
+
+        case 4:
+            filterItem();
+        break;
+
+        case 5:
+            showItem();
+        break;
+    
+        default:
+            break;
+    }
+
+}
