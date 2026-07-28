@@ -32,12 +32,25 @@ const addItem=()=>{ //to add the items
     products.push(newProduct)
 }
 
-const removeItem=()=>{ //to remove the itemas
+const removeItem=()=>{ //to remove the items
+    console.log("delete the products");
 
+    const name = read.question("enter the name of the product")
+     const newProdudtAfDelete = products.filter((value)=>{
+        return value.name != name;
+     })
+     products.length = 0;
+     products.push(...newProdudtAfDelete) ;
+    
 }
 
 const showItem=()=>{ //to show the items
-
+    products.forEach((value)=>{
+        console.log(`name = ${value.name}`);
+        console.log(`catrgory = ${value.category}`);
+        console.log(`price = ${value.price}`);
+        console.log(`==================`);
+    })
 }
 
 const filterItem=()=>{// to filter by search
@@ -58,7 +71,18 @@ const filterItem=()=>{// to filter by search
 }
 
 const priceLimitItem=()=>{ //to filter by price limitation
+        console.log("price limiting products")
+        const min = read.questionInt("enter your base budget")
+        const max = read.questionInt("enter you max budget")
 
+        const priceProduct = products.filter((value)=>{
+            return value.price >= min && value.price <=max;
+        })
+        priceProduct.forEach((item)=>{
+         console.log("Name=",item.name)
+        console.log("Category=",item.category)
+        console.log("Price=",item.price)
+        })
 }
 
 while(true){
@@ -69,7 +93,7 @@ while(true){
     console.log("4. Search Products ")
     console.log("5. View Products")
 
-    const ch = read.question("Enter Your Choice: ")
+    const ch = read.questionInt("Enter Your Choice: ")
     switch (ch) {
         case 1:
             addItem();
