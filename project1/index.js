@@ -66,6 +66,7 @@ const filterItem=()=>{// to filter by search
         console.log("Name=",item.name)
         console.log("Category=",item.category)
         console.log("Price=",item.price)
+         console.log(`==================`);
     })
     
 }
@@ -82,6 +83,7 @@ const priceLimitItem=()=>{ //to filter by price limitation
          console.log("Name=",item.name)
         console.log("Category=",item.category)
         console.log("Price=",item.price)
+         console.log(`==================`);
         })
 }
 
