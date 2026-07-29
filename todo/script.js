@@ -9,7 +9,7 @@ function addTask() {
     text.value = ""
 }
     
-btn.onclick = addTask();
+btn.onclick = addTask;
 text.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         addTask();
