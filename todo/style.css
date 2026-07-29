@@ -48,7 +48,28 @@
     justify-content: center;
     align-items: center;
     background-color: blanchedalmond;
+    
+}
+.task{
+    margin: 5px;
+    width: 060%;
+    border: 2px solid rgb(152, 109, 109);
+    text-align: center;
+    border-radius: 5px;
 }
 .done {
   text-decoration: line-through;
+}
+.footer{
+    height: 100px;
+    background-color: black;
+     position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(101, 98, 98);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    
 }
