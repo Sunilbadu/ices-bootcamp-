@@ -59,6 +59,7 @@
 }
 .done {
   text-decoration: line-through;
+  /* visibility: hidden; */
 }
 .footer{
     height: 100px;
@@ -71,5 +72,5 @@
     color: white;
     text-align: center;
     padding: 15px;
-    
+
 }
